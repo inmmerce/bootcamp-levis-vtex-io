@@ -1,0 +1,14 @@
+{
+  "store.home": {
+    "blocks": ["rich-text#home"]
+  },
+  "rich-text#home": {
+    "props": {
+      "blockClass": "rich-text-home",
+      "text": "### VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}

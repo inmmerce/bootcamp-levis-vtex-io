@@ -1,0 +1,61 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop"]
+  },
+  "header-layout.desktop": {
+    "children": ["flex-layout.row#pre-header"]
+  },
+  "flex-layout.row#pre-header": {
+    "props": {
+      "blockClass": "pre-header",
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": [
+      "rich-text#rastrear-orden",
+      "rich-text#localizador-de-tiendas",
+      "rich-text#lista-de-deseos",
+      "login",
+      "image#flag"
+    ]
+  },
+  "rich-text#rastrear-orden": {
+    "props": {
+      "blockClass": "pre-header",
+      "text": "[Rastrar Orden](https://www.cifexpress.com/#x-section-5)"
+    }
+  },
+  "rich-text#localizador-de-tiendas": {
+    "props": {
+      "blockClass": "pre-header",
+      "text": "[Localizador de Tiendas](/tiendas)"
+    }
+  },
+  "rich-text#lista-de-deseos": {
+    "props": {
+      "blockClass": "pre-header",
+      "text": "[Lista de Deseos](/wishlist)"
+    }
+  },
+  "image#flag": {
+    "props": {
+      "blockClass": "flag",
+      "src": "assets/panama.svg",
+      "link": {
+        "url": "http://global.levi.com/",
+        "newTab": true
+      }
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Mi cuenta"
+    }
+  }
+}
