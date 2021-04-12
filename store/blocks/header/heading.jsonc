@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#heading": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "logo",
+      "vtex.menu@2.x:menu#heading",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "minicart.v2"
+    ]
+  },
+  "vtex.menu@2.x:menu#heading": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "About Us"
+          }
+        }
+      ]
+    }
+  }
+}
