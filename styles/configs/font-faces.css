@@ -7,3 +7,8 @@
   font-family: "GrenzeGotisch";
   src: url("assets/fonts/GrenzeGotisch.ttf");
 }
+
+@font-face {
+  font-family: "InterstateBlack";
+  src: url("assets/fonts/InterstateBlack.ttf");
+}

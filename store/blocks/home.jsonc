@@ -1,14 +1,125 @@
 {
   "store.home": {
-    "blocks": ["rich-text#home"]
+    "blocks": [
+      "flex-layout.row#slider-home",
+      "flex-layout.row#image-home01",
+      "flex-layout.row#titulo-home01",
+      "flex-layout.row#half-banners-home01",
+      "flex-layout.row#titulo-banners-home01"
+    ]
   },
-  "rich-text#home": {
+  "flex-layout.row#image-home01": {
+    "children": ["image#example"]
+  },
+  "flex-layout.row#half-banners-home01": {
+    "children": ["list-context.image-list#demo"]
+  },
+  "flex-layout.row#slider-home": {
     "props": {
-      "blockClass": "rich-text-home",
-      "text": "### VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "blockClass": "slider-home",
+      "fullWidth": false,
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["slider-layout#text-test"]
+  },
+
+  "flex-layout.row#titulo-home01": {
+    "children": ["rich-text#3"]
+  },
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly"
+    },
+    "children": ["rich-text#1", "rich-text#2"]
+  },
+
+  "rich-text#1": {
+    "props": {
+      "blockClass": "carousel",
+      "text": "ENCUENTRA TU LEVIS STORE \n [Aquí](/tiendas)"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "blockClass": "carousel",
+      "text": "LEVI'S® X POKEMON™ \n [Conoce más](/colecciones/pokemon)"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "blockClass": "titulo-home",
+      "text": "Departamentos",
       "font": "t-heading-1"
+    }
+  },
+  "rich-text#4": {
+    "props": {
+      "blockClass": "titulo-shelf",
+      "text": "RECOMENDADO PARA TI",
+      "font": "t-heading-3"
+    }
+  },
+  "image#example": {
+    "props": {
+      "src": "assets/banners/banner-home-01.png"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/banners/Imagem 1.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/banners/Imagem 3.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/banners/Imagem 4.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "blockClass": "demo-images",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false
+    }
+  },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"]
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "blockClass": "demo-shelf",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": false
     }
   }
 }

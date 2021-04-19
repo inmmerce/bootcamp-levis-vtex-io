@@ -10,3 +10,32 @@
 .container--pre-header {
   align-items: center;
 }
+
+.wrapper--carousel {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.link--carousel {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container--titulo-home {
+  justify-content: center;
+}
+
+.paragraph--titulo-home {
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.25px #000;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  letter-spacing: 10px;
+  font-size: 10rem;
+}
+
+.paragraph--titulo-home::selection {
+  background: #c41230;
+  color: #fff;
+}
