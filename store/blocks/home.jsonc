@@ -4,8 +4,7 @@
       "flex-layout.row#slider-home",
       "flex-layout.row#image-home01",
       "flex-layout.row#titulo-home01",
-      "flex-layout.row#half-banners-home01",
-      "flex-layout.row#titulo-banners-home01"
+      "flex-layout.row#half-banners-home01"
     ]
   },
   "flex-layout.row#image-home01": {
